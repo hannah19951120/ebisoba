@@ -1428,8 +1428,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  padding-top: 45px;
-  padding-bottom: 158px;
+  padding: 60px 10px 160px 10px;
+  margin-top: -2px;
   background-image: url("../ebisobaichigen/img/intro_cloud.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1484,8 +1484,9 @@ img {
       flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 35px;
-  padding-bottom: 58px;
+  padding: 60px 10px 80px 10px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   background-image: url("../ebisobaichigen/img/intro_cloud.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1519,7 +1520,7 @@ img {
 }
 
 .rule {
-  padding: 36px 12px 20px 12px;
+  padding: 50px 12px 30px 12px;
   background-color: #FFECAE;
   box-shadow: 0 0 11px 0 rgba(110, 83, 0, 0.5);
 }
@@ -1556,7 +1557,6 @@ img {
   display: block;
   background-color: #FABE00;
   margin-right: 5px;
-  margin-bottom: 10px;
   white-space: nowrap;
 }
 
