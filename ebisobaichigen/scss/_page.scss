@@ -6,7 +6,7 @@
 .intro{
 	@include df_center();
 	position: relative;
-	padding: 60px 10px 160px 10px;
+	padding: 50px 10px 160px 10px;
 	margin-top: -2px;
 	@include bgimg('../ebisobaichigen/img/intro_cloud.png');
 	background-size: auto;
@@ -47,7 +47,7 @@
 
 .awards{
 	@include df_center();
-	padding: 60px 10px 80px 10px;
+	padding: 50px 10px 80px 10px;
 	padding-top: 60px;
 	padding-bottom: 80px;
 	@include bgimg('../ebisobaichigen/img/intro_cloud.png');
