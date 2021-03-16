@@ -8,7 +8,7 @@
     <title>Food Marco – 找餐廳、寫食記、賺回饋</title>
     <meta name='description' content='Food Marco 提供不業配的餐廳食記、可靠的美食經驗，找餐廳不再採雷。在這裡，人人都是分享家，暢所欲言不被審稿；並首創分潤機制，讓真實分享獲得實質肯定，一起加入Food Marco，經驗傳承賺M幣。'>
     <meta name='keywords' content='馬可波羅, 美食, 食記, 餐廳, 菜單, 分享'>
-    <link rel="icon" href="img/favo.ico" type="image/x-icon" />
+    <link rel="icon" href="ebisobaichigen/img/favo.ico" type="image/x-icon" />
     <!-- title設定 -->     
     <meta property="og:site_name" content="Food Marco" />
     <meta property="og:type" content='website' />
@@ -22,16 +22,19 @@
 </head>
 <body>
     <div class="wrap">
+        <div class="fixGift p-fixed">
+            <img src="ebisobaichigen/img/fixBtn.png" alt="更多合作餐廳"  id="scrollBottom" data-scrollName="More">
+        </div>
         <div class="fixBar p-fixed b-black">
             <ul class="fixBar__list py-2">
                 <li>
-                    <a href="#">
+                    <a href="#" class="scrollBtn" data-scrollName="Money">
                         <img src="ebisobaichigen/img/fixBar/fixBar_coin.svg" alt="M幣獎金" class="mb-1">
                         <p>M幣獎金</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="scrollBtn" data-scrollName="Rule">
                         <img src="ebisobaichigen/img/fixBar/fixBar_rule.svg" alt="活動規範" class="mb-1">
                         <p>活動規範</p>
                     </a>
@@ -45,8 +48,9 @@
             </ul>
         </div>
 
-        <section class="hero">
-            <img src="ebisobaichigen/img/sec1_hero.jpg" alt="呼叫拉麵控">
+        <section class="hero p-relative" >
+            <img src="ebisobaichigen/img/hero_title.png" alt="呼叫拉麵控" class='hero__title'>
+            <img src="ebisobaichigen/img/sec1_hero.jpg" alt="FoodMarcox一幻">
         </section>
 
         <section class="intro b-secondary-primary">
@@ -60,7 +64,7 @@
             <img src="ebisobaichigen/img/ebisoba_ramenCard.jpg" alt="來自北海道人氣NO.1拉麵">
         </section>
 
-        <section class="awards">
+        <section class="awards" id='scrollMoney'>
             <img src="ebisobaichigen/img/awards_title.png" alt="吃拉麵用Food Marco賺600M幣獎金" class="mb-2">
             <div class="awards__step"><img src="ebisobaichigen/img/awards_step1.png" alt="付款獎"></div>
             <div class="awards__step"><img src="ebisobaichigen/img/awards_step2.png" alt="認可獎"></div>
@@ -70,7 +74,7 @@
             <p class="t-black t-bold t-center">※本活動之M幣獎金回饋發送時間，請依活動辦法公告為準</p>
         </section>
 
-        <section class="rule">
+        <section class="rule" id='scrollRule'>
             <img src="ebisobaichigen/img/rule_title.png" alt="活動規範" class="rule__title mb-2">
             <h3 class="t-warning mb-2">領取M幣獎金與分潤條件說明：</h3>
             <ul class="ruleList">
@@ -104,7 +108,7 @@
             </ul>
         </section>
 
-        <section class="bottomBtn">
+        <section class="bottomBtn" id='scrollMore'>
             <ul class="bottomBtnList mt-3 mb-5">
                 <li class="bottomBtnList__btn">
                     <a href="#"><img src="ebisobaichigen/img/bootmBtn1.png" alt="前往一幻拉麵食記"></a>
@@ -131,10 +135,5 @@
             </ol>
         </section>
     </div>
-    <script type="text/javascript" src="js/aos.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
